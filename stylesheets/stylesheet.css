@@ -423,3 +423,95 @@ Small Device Styles
   }
 
 }
+.button {
+  display: inline-block;
+  padding: auto auto;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #f6d0fc;
+  background-color: #abc75c;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 7px 4px #082a4f;
+}
+
+.button:hover {
+  background-color: #abc75c
+}
+
+.button:active {
+  background-color: #abc75c;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button {
+  position: relative;
+  background-color: #a1baff;
+  border: none;
+  font-size: auto;
+  color: #FFFFFF;
+  padding: 20px;
+  width: auto;
+  text-align: center;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button:after {
+  content: "";
+  background: #a600ff;
+  font-size: 2px;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '!';
+  position: absolute;
+  opacity: 0;
+  top: -27px;
+  left: 10px;
+  right: -200px;
+  transition: 0.5s;
+  border: 1px solid #4CAF50;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 9;
+  right: 0;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
